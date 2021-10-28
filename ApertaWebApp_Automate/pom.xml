@@ -10,6 +10,28 @@
     <!--可以自定义标签对,可以在其它地方用{标签名引用}-->
     <tiny_version>3.4.6</tiny_version>
   </properties>
+  <build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.8.1</version>
+			</plugin>
+		<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>2.18.1</version>
+				<configuration>
+					<suiteXmlFiles>
+						<!-- TestNG suite XML files -->
+						<suiteXmlFile>testng.xml</suiteXmlFile>
+					</suiteXmlFiles>
+				</configuration>
+			</plugin>
+		
+		</plugins>
+	
+	</build>
   <dependencies>
     <dependency>
       <groupId>org.tinygroup</groupId>
@@ -53,11 +75,6 @@
     <groupId>com.aventstack</groupId>
     <artifactId>extentreports</artifactId>
     <version>3.1.5</version>
-</dependency>
-<dependency>
-    <groupId>org.apache.maven.plugins</groupId>
-    <artifactId>maven-surefire-plugin</artifactId>
-    <version>3.0.0-M5</version>
 </dependency>
   </dependencies>
   </project>
