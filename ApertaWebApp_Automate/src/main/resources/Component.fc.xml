@@ -1,0 +1,9 @@
+<components>
+	<component name="ApertaWebApp_Automate" bean="ApertaWebApp_Automate"
+		title="ApertaWebApp_Automate Component" icon="/icon/component.gif">
+		<short-description>ApertaWebApp_Automate component</short-description>
+		<long-description>ApertaWebApp_Automate component long description
+		</long-description>
+	</component>
+</components>
+

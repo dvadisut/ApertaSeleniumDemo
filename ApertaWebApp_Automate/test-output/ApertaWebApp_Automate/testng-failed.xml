@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [ApertaWebApp_Automate]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="ApertaWebApp Test(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.ApertaWebApp_Automate.TestCases.TC_DCBTest_002">
+        <methods>
+          <include name="close"/>
+          <include name="setup"/>
+          <include name="DCB"/>
+        </methods>
+      </class> <!-- com.ApertaWebApp_Automate.TestCases.TC_DCBTest_002 -->
+    </classes>
+  </test> <!-- ApertaWebApp Test(failed) -->
+</suite> <!-- Failed suite [ApertaWebApp_Automate] -->
