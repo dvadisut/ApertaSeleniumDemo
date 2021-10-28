@@ -4,7 +4,6 @@
   <test thread-count="5" name="Test">
     <classes>
       <class name="com.ApertaWebApp_Automate.TestCases.TC_LoginTest_001"/>
-      <class name="com.ApertaWebApp_Automate.TestCases.TC_DCBTest_002"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
