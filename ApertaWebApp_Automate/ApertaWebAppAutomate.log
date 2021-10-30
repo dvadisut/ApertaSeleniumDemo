@@ -354,3 +354,45 @@ issues
 [main] ERROR BaseClass.class  - False 
 [main] ERROR BaseClass.class  - False 
 [main] ERROR BaseClass.class  - False 
+[main] INFO  BaseClass.class  - The Aperta URL is opened-------------->TIME OF EXECUTION= Fri Oct 29 00:59:05 IST 2021
+[main] INFO  BaseClass.class  - The Username is entered
+[main] INFO  BaseClass.class  - The Password is entered
+[main] ERROR BaseClass.class  - The password is wrong. The error message is displayed correctly
+[main] INFO  BaseClass.class  - Trying with the correct password
+[main] INFO  BaseClass.class  - The Password is entered
+[main] INFO  BaseClass.class  - Submit button is clicked
+[main] INFO  BaseClass.class  - Validating the title of the launchpage.....
+[main] INFO  BaseClass.class  - ---------------Launchpad is opened successfully-----------------
+[main] INFO  BaseClass.class  - Aperta Tile is present--->LANDED ON RIGHT PAGE------>
+[main] INFO  BaseClass.class  - Login successfull
+[main] INFO  BaseClass.class  - ---------------DCB is opened successfully-----------------
+[main] INFO  BaseClass.class  - Validating the title of the DCB Web App.....
+[main] INFO  BaseClass.class  - ApertaDCB Tile is present--->LANDED ON RIGHT PAGE------>
+[main] INFO  BaseClass.class  - DCB date is selected successfully
+[main] INFO  BaseClass.class  - ---------------DataEntry is opened successfully-----------------
+[main] INFO  BaseClass.class  - Validating the title of the DataEntry.....
+[main] INFO  BaseClass.class  - Aperta DataEntryTile is present--->LANDED ON RIGHT PAGE------>
+[main] INFO  BaseClass.class  - ---------------Validating the DCB item images and entering the amount-----------------
+[main] ERROR BaseClass.class  - The Image_1 DCB title is not displayed
+[main] INFO  BaseClass.class  -  Enter the Amount 1
+[main] INFO  BaseClass.class  - Amount 1 is entered successfully
+[main] INFO  BaseClass.class  - The Image_2 DCB title is displayed
+[main] INFO  BaseClass.class  -  Enter the Amount 2
+[main] INFO  BaseClass.class  - Amount 2 is entered successfully
+[main] INFO  BaseClass.class  - The Image_3 DCB title is displayed
+[main] INFO  BaseClass.class  -  Enter the Amount 3
+[main] INFO  BaseClass.class  - Amount 3 is entered successfully
+[main] INFO  BaseClass.class  - ---------------Web Balancer is opened successfully-----------------
+[main] INFO  BaseClass.class  - Aperta Web Balancer Tile is present--->LANDED ON RIGHT PAGE------>
+[main] INFO  BaseClass.class  - ---------------Validating the Items in Checker Pass-----------------
+[main] ERROR BaseClass.class  - The Image_1 WebBalancer is not displayed
+[main] INFO  BaseClass.class  -  Item 1 is approved successfully
+[main] ERROR BaseClass.class  - The Image_2 WebBalancer is not displayed
+[main] INFO  BaseClass.class  -  Item 2 is approved successfully
+[main] ERROR BaseClass.class  - The Image_3 WebBalancer is not displayed
+[main] INFO  BaseClass.class  -  Item 3 is approved successfully
+[main] INFO  BaseClass.class  - The Image_4 WebBalancer is displayed
+[main] INFO  BaseClass.class  -  Item 4 is approved successfully
+[main] INFO  BaseClass.class  - The Batch is closed successfully
+[main] INFO  BaseClass.class  - ---------------Web Supervisor is opened successfully-----------------
+[main] INFO  BaseClass.class  - Aperta Tile is present--->LANDED ON RIGHT PAGE------>
