@@ -411,3 +411,18 @@ issues
 [main] INFO  BaseClass.class  - Validating the title of the DCB Web App.....
 [main] INFO  BaseClass.class  - ApertaDCB Tile is present--->LANDED ON RIGHT PAGE------>
 [main] INFO  BaseClass.class  - DCB date is selected successfully
+[main] INFO  BaseClass.class  - The Aperta URL is opened-------------->TIME OF EXECUTION= Sat Oct 30 13:39:21 IST 2021
+[main] INFO  BaseClass.class  - The Username is entered
+[main] INFO  BaseClass.class  - The Password is entered
+[main] ERROR BaseClass.class  - The password is wrong. The error message is displayed correctly
+[main] INFO  BaseClass.class  - Trying with the correct password
+[main] INFO  BaseClass.class  - The Password is entered
+[main] INFO  BaseClass.class  - Submit button is clicked
+[main] INFO  BaseClass.class  - Validating the title of the launchpage.....
+[main] INFO  BaseClass.class  - ---------------Launchpad is opened successfully-----------------
+[main] INFO  BaseClass.class  - Aperta Tile is present--->LANDED ON RIGHT PAGE------>
+[main] INFO  BaseClass.class  - Login successfull
+[main] INFO  BaseClass.class  - ---------------DCB is opened successfully-----------------
+[main] INFO  BaseClass.class  - Validating the title of the DCB Web App.....
+[main] INFO  BaseClass.class  - ApertaDCB Tile is present--->LANDED ON RIGHT PAGE------>
+[main] INFO  BaseClass.class  - DCB date is selected successfully
