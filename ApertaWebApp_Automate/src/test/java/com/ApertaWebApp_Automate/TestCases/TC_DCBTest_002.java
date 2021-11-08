@@ -16,6 +16,9 @@ public class TC_DCBTest_002 extends BaseClass{
 	public TC_DCBTest_002(WebDriver driver) {
 		 this.driver=driver;
 	}
+	
+	WebDriver driver=null;
+	
 	@Test (priority = 2)
 	public void DCB() throws InterruptedException 
 	{

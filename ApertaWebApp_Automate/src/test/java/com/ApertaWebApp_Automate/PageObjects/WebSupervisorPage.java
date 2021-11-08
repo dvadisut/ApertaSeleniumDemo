@@ -29,14 +29,16 @@ public class WebSupervisorPage extends BaseClass {
 		logger.info("---------------Web Supervisor is opened successfully-----------------");
 		
 	}
+	
 	public void suplefttitle() {
 		ArrayList<String> wid1 = new ArrayList<String>(driver.getWindowHandles());
 		driver.switchTo().window(wid1.get(1));
-		
-		for (int i = 1; i < 19; i++) {
-			
-			WebElement sdate=driver.findElement(By.xpath("//*[@id=\"SBDate\"]/span"));	
+		    WebElement sdate=driver.findElement(By.xpath("//*[@id=\"SBDate\"]/span"));	
+		    boolean sd= sdate.isDisplayed();
+		    String s1=String.valueOf(sd);
 			WebElement stime=driver.findElement(By.xpath("//*[@id=\"SideBarList\"]/li[2]/span")); 
+			 boolean st= stime.isDisplayed();
+			    String s2=String.valueOf(st);
 			WebElement ssession=driver.findElement(By.xpath("//*[@id=\"SBSession\"]/span"));
 			WebElement sicl=driver.findElement(By.xpath("//*[@id=\"SBFiles\"]/span")); 
 			WebElement stot=driver.findElement(By.xpath("//*[@id=\"SBTotals\"]/span"));
@@ -55,17 +57,21 @@ public class WebSupervisorPage extends BaseClass {
 			WebElement sallsite=driver.findElement(By.xpath("//*[@id=\"SideBarList\"]/li[24]/span")); 
 			WebElement scurren=driver.findElement(By.xpath("//*[@id=\"SideBarList\"]/li[25]/span")); 
 			WebElement susername=driver.findElement(By.xpath("//*[@id=\"SideBarList\"]/li[28]/span"));
-			String hg=susername.toString();
 			
-			if (hg.equals("susername")) {
-				
+	String[] ele= {s1,s2};
+	
+	for (int i = 0; i < ele.length; i++) {
+		
+	}
+	
+	
+	
+	}
 			
 			
-			    
-		}
-		}
-       
-		}
+		
+		
+		
 		
 		
 		

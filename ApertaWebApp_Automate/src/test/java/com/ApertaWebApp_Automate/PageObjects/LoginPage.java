@@ -5,13 +5,17 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 
 import com.ApertaWebApp_Automate.TestCases.BaseClass;
+
 
 public class LoginPage extends BaseClass{
 	
 	
 	WebDriver driver=null;
+	
 	
 	public LoginPage(WebDriver driver)
 	{

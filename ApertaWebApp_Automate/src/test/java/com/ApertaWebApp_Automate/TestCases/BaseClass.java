@@ -46,6 +46,7 @@ public class BaseClass{
 		handlingSSL.setAcceptInsecureCerts(true);
 		driver= new ChromeDriver(handlingSSL);
 	    driver.manage().window().maximize();
+	    driver.get(baseURL);
 		logger = Logger.getLogger("BaseClass.class");
 		PropertyConfigurator.configure("Log4j.properties");
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
@@ -57,6 +58,9 @@ public class BaseClass{
 	public void close()
 	{
 		driver.quit();
+	}
+	public WebDriver getDriverInstance() {
+		return driver;
 	}
 	
 }

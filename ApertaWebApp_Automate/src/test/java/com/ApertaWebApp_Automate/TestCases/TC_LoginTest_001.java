@@ -3,6 +3,7 @@ package com.ApertaWebApp_Automate.TestCases;
 
 
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -14,9 +15,11 @@ public class TC_LoginTest_001 extends BaseClass {
 	@Test (priority = 1)
 	public void LoginTest() throws InterruptedException
 	{
-		
+		//PageFactory.initElements(driver, LoginPage.class);
     	LoginPage t=new LoginPage(driver);
-        driver.get(baseURL);
+        //driver.get(baseURL);
+		
+		
         logger.info("The Aperta URL is opened-------------->TIME OF EXECUTION= "+ date);
         
 		t.setusername(username);
@@ -37,7 +40,7 @@ public class TC_LoginTest_001 extends BaseClass {
 
 		}
 		
-		TC_DCBTest_002 lp= new TC_DCBTest_002(driver);
-		lp.DCB();
+		//TC_DCBTest_002 lp= new TC_DCBTest_002(driver);
+		//lp.DCB();
 	}
 }
