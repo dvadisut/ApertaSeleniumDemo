@@ -4,7 +4,10 @@ package com.ApertaWebApp_Automate.TestCases;
 import java.util.ArrayList;
 import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -12,21 +15,16 @@ import com.ApertaWebApp_Automate.PageObjects.DCBPage;
 
 public class TC_DCBTest_002 extends BaseClass{
 	
-	
-	public TC_DCBTest_002(WebDriver driver) {
-		 this.driver=driver;
+	public void dcbopen() {
+		
+		PageFactory.initElements(driver,DCBPage.class);
+		DCBPage.dcbtitle.click();
+		logger.info("---------------DCB is opened successfully-----------------");
 	}
 	
-	WebDriver driver=null;
-	
-	@Test (priority = 2)
-	public void DCB() throws InterruptedException 
-	{
-	
-		DCBPage p= new DCBPage(driver);
-		p.dcbtitle();
-		logger.info("---------------DCB is opened successfully-----------------");
-		logger.info("Validating the title of the DCB Web App.....");
+	public void dcbtitlevalidation() {
+		
+       logger.info("Validating the title of the DCB Web App.....");
 		
 		ArrayList<String> wid = new ArrayList<String>(driver.getWindowHandles());
 		driver.switchTo().window(wid.get(1));
@@ -41,10 +39,30 @@ public class TC_DCBTest_002 extends BaseClass{
 			logger.error("ApertaDCB Tile is not present--->LANDED ON WRONG PAGE------>");
 
 		}
-		p.dcbdate();
+		
+	}
+	
+	public static void dcbdate() {
+    	PageFactory.initElements(driver,DCBPage.class);
+    	DCBPage.dcbdate.click();
 		logger.info("DCB date is selected successfully");
-		TC_DataEntryTest_003 jk= new TC_DataEntryTest_003(driver);
-		jk.DataEntryp();
+		
+	}
+    
+    public static void dcbselect() {
+    	PageFactory.initElements(driver,DCBPage.class);
+    	DCBPage.dcbselect.click();
+    	
+    }
+	@Test
+	public void DCB() throws InterruptedException 
+	{
+     	PageFactory.initElements(driver,DCBPage.class);
+    	dcbopen();
+    	dcbtitlevalidation();
+    	dcbdate();
+    	dcbselect();
+		
 	}
 	
 }

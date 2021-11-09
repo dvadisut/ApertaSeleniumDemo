@@ -11,15 +11,17 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterSuite;
 //import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
-
+import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.BeforeTest;
 
 import com.ApertaWebApp_Automate.utilities.ReadConfig;
 
 public class BaseClass{
 
-	ReadConfig readconfig=new ReadConfig(); 
+	static ReadConfig readconfig=new ReadConfig(); 
 	public String baseURL=readconfig.getApplicationURL();
 	public String username=readconfig.getusername();
 	public String password=readconfig.getpassword();
@@ -27,17 +29,17 @@ public class BaseClass{
 	public String wrongmsg=readconfig.getwrongmsg();
 	public String detitle=readconfig.getdetitle(); 
 	public String aptitle=readconfig.getaptitle();
-	public String dcbtitle=readconfig.getdcbtitle();
+	public static String dcbtitle=readconfig.getdcbtitle();
 	public String baltitle=readconfig.getbaltitle();
 	public String suptitle=readconfig.getsuptitle();
-	public WebDriver driver;
+	public static WebDriver driver;
 	public static Logger logger;
 	Date date=new Date();
 	
 	
 	
 
-	@BeforeClass
+	@BeforeSuite
 	public void setup()
 	{
 	
@@ -54,13 +56,10 @@ public class BaseClass{
 	    
 	}
 	
-	@AfterClass
+	@AfterSuite
 	public void close()
 	{
 		driver.quit();
-	}
-	public WebDriver getDriverInstance() {
-		return driver;
 	}
 	
 }
