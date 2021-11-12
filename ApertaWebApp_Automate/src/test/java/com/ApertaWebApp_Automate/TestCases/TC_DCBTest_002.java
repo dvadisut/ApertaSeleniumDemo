@@ -19,7 +19,7 @@ public class TC_DCBTest_002 extends BaseClass{
 		
 		PageFactory.initElements(driver,DCBPage.class);
 		DCBPage.dcbtitle.click();
-		logger.info("---------------DCB is opened successfully-----------------");
+		logger.info("---------------<DCB is opened successfully>-----------------");
 	}
 	
 	public void dcbtitlevalidation() {

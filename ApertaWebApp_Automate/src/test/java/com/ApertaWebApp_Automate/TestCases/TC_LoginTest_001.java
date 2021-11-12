@@ -36,7 +36,7 @@ public class TC_LoginTest_001 extends BaseClass {
 	if (driver.getTitle().equals(aptitle)) 
 	{
 		Assert.assertTrue(true);
-		logger.info("---------------Launchpad is opened successfully-----------------");
+		logger.info("---------------<Launchpad is opened successfully>-----------------");
 		logger.info("Aperta Tile is present--->LANDED ON RIGHT PAGE------>");
 		logger.info("Login successfull");
 		
