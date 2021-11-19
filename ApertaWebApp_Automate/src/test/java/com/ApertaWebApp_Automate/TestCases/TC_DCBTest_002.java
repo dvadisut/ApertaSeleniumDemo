@@ -52,16 +52,16 @@ public class TC_DCBTest_002 extends BaseClass{
     public static void dcbselect() {
     	PageFactory.initElements(driver,DCBPage.class);
     	while (true) {
-	    	DCBPage.selectedmonth.getText();
+    		selectedmonth=DCBPage.selectedmonth.getText();
 		    //System.out.println("month "+selectedmonth);
-		    DCBPage.selectedyear.getText();
+	    	selectedyear=DCBPage.selectedyear.getText();
 		    //System.out.println("year "+selectedyear);
-		    //Selected_month_year = selectedmonth + " " + selectedyear;
+		    Selected_month_year = selectedmonth + " " + selectedyear;
 		    
-		    System.out.println("Selected month and year: "+readconfig.Selected_month_year());
-		    System.out.println("targeted month and year: "+readconfig.target_month_year());
+		    System.out.println("Selected month and year: "+Selected_month_year);
+		    System.out.println("targeted month and year: "+target_month_year);
 
-	    	if (readconfig.target_month_year().equals(readconfig.Selected_month_year())) 
+	    	if (target_month_year.equals(Selected_month_year))
 		    {
 		    	System.out.println("Month and year found");
 		    	

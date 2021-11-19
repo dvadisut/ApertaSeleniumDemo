@@ -141,11 +141,5 @@ public String target_month_year() {
 	return target_month_year;
 	
 }
-public String Selected_month_year() {
-	
-	String Selected_month_year=pro.getProperty("Selected_month_year");
-	
-	return Selected_month_year;
-	
-}
+
 }

@@ -35,7 +35,12 @@ public class BaseClass{
 	public static WebDriver driver;
 	public static Logger logger;
 	Date date=new Date();
-	
+	public static String dcbdate=readconfig.targetdate();
+	//public static int dcbdatesselect=6;
+	public static String selectedmonth; 
+	public static String selectedyear;
+	public static String Selected_month_year;
+	public static String target_month_year = readconfig.targetmonth() + " " + readconfig.targetyear();
 	
 	
 
