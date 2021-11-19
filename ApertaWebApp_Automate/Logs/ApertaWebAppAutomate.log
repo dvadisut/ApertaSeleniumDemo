@@ -1,16 +1,16 @@
-[INFO: 2021-11-12 22:14:20 com.ApertaWebApp_Automate.TestCases.TC_LoginTest_001.LoginTest(TC_LoginTest_001.java:61)] The Aperta URL is opened-------------->TIME OF EXECUTION= Fri Nov 12 22:14:12 IST 2021
- [INFO: 2021-11-12 22:14:21 com.ApertaWebApp_Automate.TestCases.TC_LoginTest_001.Enterusername(TC_LoginTest_001.java:53)] The Username is entered
- [INFO: 2021-11-12 22:14:24 com.ApertaWebApp_Automate.TestCases.TC_LoginTest_001.setpassword(TC_LoginTest_001.java:18)] The Password is entered
- [ERROR: 2021-11-12 22:14:24 com.ApertaWebApp_Automate.TestCases.TC_LoginTest_001.setpassword(TC_LoginTest_001.java:20)] The password is wrong. The error message is displayed correctly
- [INFO: 2021-11-12 22:14:24 com.ApertaWebApp_Automate.TestCases.TC_LoginTest_001.setpassword(TC_LoginTest_001.java:21)] Trying with the correct password
- [INFO: 2021-11-12 22:14:25 com.ApertaWebApp_Automate.TestCases.TC_LoginTest_001.setpassword(TC_LoginTest_001.java:27)] The Password is entered
- [INFO: 2021-11-12 22:14:26 com.ApertaWebApp_Automate.TestCases.TC_LoginTest_001.setpassword(TC_LoginTest_001.java:29)] Submit button is clicked
- [INFO: 2021-11-12 22:14:26 com.ApertaWebApp_Automate.TestCases.TC_LoginTest_001.setpassword(TC_LoginTest_001.java:30)] Validating the title of the launchpage.....
- [INFO: 2021-11-12 22:14:26 com.ApertaWebApp_Automate.TestCases.TC_LoginTest_001.titlevalidation(TC_LoginTest_001.java:39)] ---------------<Launchpad is opened successfully>-----------------
- [INFO: 2021-11-12 22:14:26 com.ApertaWebApp_Automate.TestCases.TC_LoginTest_001.titlevalidation(TC_LoginTest_001.java:40)] Aperta Tile is present--->LANDED ON RIGHT PAGE------>
- [INFO: 2021-11-12 22:14:26 com.ApertaWebApp_Automate.TestCases.TC_LoginTest_001.titlevalidation(TC_LoginTest_001.java:41)] Login successfull
- [INFO: 2021-11-12 22:14:28 com.ApertaWebApp_Automate.TestCases.TC_DCBTest_002.dcbopen(TC_DCBTest_002.java:22)] ---------------<DCB is opened successfully>-----------------
- [INFO: 2021-11-12 22:14:28 com.ApertaWebApp_Automate.TestCases.TC_DCBTest_002.dcbtitlevalidation(TC_DCBTest_002.java:27)] Validating the title of the DCB Web App.....
- [INFO: 2021-11-12 22:14:46 com.ApertaWebApp_Automate.TestCases.TC_DCBTest_002.dcbtitlevalidation(TC_DCBTest_002.java:35)] ApertaDCB Tile is present--->LANDED ON RIGHT PAGE------>
- [INFO: 2021-11-12 22:14:46 com.ApertaWebApp_Automate.TestCases.TC_DCBTest_002.dcbdate(TC_DCBTest_002.java:48)] DCB date is selected successfully
+[INFO: 2021-11-19 19:25:11 com.ApertaWebApp_Automate.TestCases.TC_LoginTest_001.LoginTest(TC_LoginTest_001.java:61)] The Aperta URL is opened-------------->TIME OF EXECUTION= Fri Nov 19 19:25:04 IST 2021
+ [INFO: 2021-11-19 19:25:11 com.ApertaWebApp_Automate.TestCases.TC_LoginTest_001.Enterusername(TC_LoginTest_001.java:53)] The Username is entered
+ [INFO: 2021-11-19 19:25:11 com.ApertaWebApp_Automate.TestCases.TC_LoginTest_001.setpassword(TC_LoginTest_001.java:18)] The Password is entered
+ [ERROR: 2021-11-19 19:25:11 com.ApertaWebApp_Automate.TestCases.TC_LoginTest_001.setpassword(TC_LoginTest_001.java:20)] The password is wrong. The error message is displayed correctly
+ [INFO: 2021-11-19 19:25:11 com.ApertaWebApp_Automate.TestCases.TC_LoginTest_001.setpassword(TC_LoginTest_001.java:21)] Trying with the correct password
+ [INFO: 2021-11-19 19:25:12 com.ApertaWebApp_Automate.TestCases.TC_LoginTest_001.setpassword(TC_LoginTest_001.java:27)] The Password is entered
+ [INFO: 2021-11-19 19:25:12 com.ApertaWebApp_Automate.TestCases.TC_LoginTest_001.setpassword(TC_LoginTest_001.java:29)] Submit button is clicked
+ [INFO: 2021-11-19 19:25:12 com.ApertaWebApp_Automate.TestCases.TC_LoginTest_001.setpassword(TC_LoginTest_001.java:30)] Validating the title of the launchpage.....
+ [INFO: 2021-11-19 19:25:12 com.ApertaWebApp_Automate.TestCases.TC_LoginTest_001.titlevalidation(TC_LoginTest_001.java:39)] ---------------<Launchpad is opened successfully>-----------------
+ [INFO: 2021-11-19 19:25:12 com.ApertaWebApp_Automate.TestCases.TC_LoginTest_001.titlevalidation(TC_LoginTest_001.java:40)] Aperta Tile is present--->LANDED ON RIGHT PAGE------>
+ [INFO: 2021-11-19 19:25:12 com.ApertaWebApp_Automate.TestCases.TC_LoginTest_001.titlevalidation(TC_LoginTest_001.java:41)] Login successfull
+ [INFO: 2021-11-19 19:25:14 com.ApertaWebApp_Automate.TestCases.TC_DCBTest_002.dcbopen(TC_DCBTest_002.java:22)] ---------------<DCB is opened successfully>-----------------
+ [INFO: 2021-11-19 19:25:14 com.ApertaWebApp_Automate.TestCases.TC_DCBTest_002.dcbtitlevalidation(TC_DCBTest_002.java:27)] Validating the title of the DCB Web App.....
+ [INFO: 2021-11-19 19:25:16 com.ApertaWebApp_Automate.TestCases.TC_DCBTest_002.dcbtitlevalidation(TC_DCBTest_002.java:35)] ApertaDCB Tile is present--->LANDED ON RIGHT PAGE------>
+ [INFO: 2021-11-19 19:25:16 com.ApertaWebApp_Automate.TestCases.TC_DCBTest_002.dcbdate(TC_DCBTest_002.java:48)] DCB calender is clicked successfully
  
