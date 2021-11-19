@@ -44,16 +44,46 @@ public class TC_DCBTest_002 extends BaseClass{
 	
 	public static void dcbdate() {
     	PageFactory.initElements(driver,DCBPage.class);
-    	DCBPage.dcbdate.click();
-		logger.info("DCB date is selected successfully");
+    	DCBPage.dcbcalselect.click();
+		logger.info("DCB calender is clicked successfully");
 		
 	}
     
     public static void dcbselect() {
     	PageFactory.initElements(driver,DCBPage.class);
-    	DCBPage.dcbselect.click();
+    	while (true) {
+	    	DCBPage.selectedmonth.getText();
+		    //System.out.println("month "+selectedmonth);
+		    DCBPage.selectedyear.getText();
+		    //System.out.println("year "+selectedyear);
+		    //Selected_month_year = selectedmonth + " " + selectedyear;
+		    
+		    System.out.println("Selected month and year: "+readconfig.Selected_month_year());
+		    System.out.println("targeted month and year: "+readconfig.target_month_year());
+
+	    	if (readconfig.target_month_year().equals(readconfig.Selected_month_year())) 
+		    {
+		    	System.out.println("Month and year found");
+		    	
+		    	DCBPage.selectdate.click();
+		    	//List<WebElement> dateli=driver.findElements(By.xpath("//*[@id=\"ui-datepicker-div\"]//tr//td"));
+		    	System.out.println("Month----year-----date found");
+		    	break;
+		    	
+			} 
+		    
+	    	
+	    	else  {
+	    	DCBPage.skip_year_month.click();
+	    	System.out.println("date not found----checking for other date");
+	    	
+		    }
+	    	
+
+		}
     	
     }
+    
 	@Test
 	public void DCB() throws InterruptedException 
 	{
@@ -66,3 +96,4 @@ public class TC_DCBTest_002 extends BaseClass{
 	}
 	
 }
+

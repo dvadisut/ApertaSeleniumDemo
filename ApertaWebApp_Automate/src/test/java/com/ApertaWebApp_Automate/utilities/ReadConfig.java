@@ -114,4 +114,38 @@ public String getsuptitle() {
 	return suptitle;
 	
 }
+
+public String targetdate() {
+	
+	String targetdate=pro.getProperty("targetdate");
+	return targetdate;
+	
+}
+
+public String targetmonth() {
+	
+	String targetmonth=pro.getProperty("targetmonth");
+	return targetmonth;
+	
+}
+public String targetyear() {
+	
+	String targetyear=pro.getProperty("targetyear");
+	return targetyear;
+	
+}
+public String target_month_year() {
+	
+	String target_month_year=pro.getProperty("target_month_year");
+	
+	return target_month_year;
+	
+}
+public String Selected_month_year() {
+	
+	String Selected_month_year=pro.getProperty("Selected_month_year");
+	
+	return Selected_month_year;
+	
+}
 }
