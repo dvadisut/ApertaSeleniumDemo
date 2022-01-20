@@ -1,7 +1,5 @@
 package com.ApertaWebApp_Automate.PageObjects;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindAll;
 import org.openqa.selenium.support.FindBy;
 
 import com.ApertaWebApp_Automate.TestCases.BaseClass;
