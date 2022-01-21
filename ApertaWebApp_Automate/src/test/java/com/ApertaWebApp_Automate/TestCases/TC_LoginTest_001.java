@@ -58,7 +58,7 @@ public class TC_LoginTest_001 extends BaseClass {
 	public void LoginTest() throws InterruptedException
 	{
 		PageFactory.initElements(driver,LoginPage.class);
-        logger.info("The Aperta URL is opened-------------->TIME OF EXECUTION= "+ date);
+        logger.info("The Aperta URL is opened");
         Enterusername();
 		setpassword(readconfig.getWpassword());
 		titlevalidation();

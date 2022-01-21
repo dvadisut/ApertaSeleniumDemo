@@ -27,21 +27,21 @@ public class BaseClass{
 	public String password=readconfig.getpassword();
 	public String Wpassword=readconfig.getWpassword();
 	public String wrongmsg=readconfig.getwrongmsg();
-	public String detitle=readconfig.getdetitle(); 
+	public static String detitle=readconfig.getdetitle(); 
 	public String aptitle=readconfig.getaptitle();
 	public static String dcbtitle=readconfig.getdcbtitle();
 	public String baltitle=readconfig.getbaltitle();
 	public String suptitle=readconfig.getsuptitle();
 	public static WebDriver driver;
 	public static Logger logger;
-	//Date date=new Date();
-	public static String dcbdate=readconfig.targetdate();
-	public static int date=15;
+	public static String targetdate=readconfig.targetdate();
 	public static String selectedmonth; 
 	public static String selectedyear;
 	public static String Selected_month_year;
 	public static String target_month_year = readconfig.targetmonth() + " " + readconfig.targetyear();
-	
+	public static String dcbamount=readconfig.dcbamount();
+	 
+
 	
 
 	@BeforeSuite

@@ -9,6 +9,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.FindBys;
 
 import com.ApertaWebApp_Automate.TestCases.BaseClass;
+import com.google.common.collect.Table.Cell;
 
 public class DCBPage extends BaseClass {
 
@@ -33,5 +34,6 @@ public class DCBPage extends BaseClass {
 	public static WebElement skip_year_month;
 	@FindBy(xpath = "//*[@id=\"ui-datepicker-div\"]/table/tbody/tr/td")
 	public static List<WebElement> columns;
-	public static WebElement cell;
+
 }
+

@@ -115,13 +115,6 @@ public String getsuptitle() {
 	
 }
 
-public String targetdate() {
-	
-	String targetdate=pro.getProperty("targetdate");
-	return targetdate;
-	
-}
-
 public String targetmonth() {
 	
 	String targetmonth=pro.getProperty("targetmonth");
@@ -140,6 +133,16 @@ public String target_month_year() {
 	
 	return target_month_year;
 	
+}
+
+public String targetdate() {
+	String targetdate=pro.getProperty("targetdate");
+	return targetdate;
+}
+
+public String dcbamount() {
+	String dcbamount=pro.getProperty("dcbamount");
+	return dcbamount;
 }
 
 }

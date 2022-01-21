@@ -56,48 +56,40 @@ public class TC_DCBTest_002 extends BaseClass{
     	PageFactory.initElements(driver,DCBPage.class);
     	while (true) {
     		selectedmonth=DCBPage.selectedmonth.getText();
-		    //System.out.println("month "+selectedmonth);
 	    	selectedyear=DCBPage.selectedyear.getText();
-		    //System.out.println("year "+selectedyear);
 		    Selected_month_year = selectedmonth + " " + selectedyear;
-		    
-		    System.out.println("Selected month and year: "+Selected_month_year);
-		    System.out.println("targeted month and year: "+target_month_year);
+		  
+		    logger.info("Selected month and year: " +Selected_month_year);
+		    logger.info("Targeted month and year: " +target_month_year);
 
 	    	if (target_month_year.equals(Selected_month_year))
 		    {
-		    	System.out.println("Month and year found");
-		    	
-		    	DCBPage.selectdate.click();
-		    	//break;
+	    		
+	    		logger.info("Month and year found");
+	    		break;
 		    	
 			} 
 		    
 	    	
 	    	else  {
+	    		
 	    	DCBPage.skip_year_month.click();
-	    	System.out.println("date not found----checking for other date");
+	    	logger.info("date not found---->checking for other date");
 	    	
 		    }
 		    	}
-		    }
+		    }    	
 	    	
-	    	
-	/* public static void dateselect() {
+	public static void dateselect() {
 		 PageFactory.initElements(driver,DCBPage.class);
-		 //WebElement dateWidget = driver.findElement(your locator);
-		 //List<WebElement> columns=DCBPage.dateWidget.findElements(By.tagName("td"));
-		 System.out.println("insdie date select");
-
 		 for (WebElement cell: DCBPage.columns){
-		    //Select 13th Date 
-		    if (cell.getText().equals("20")){
-		       cell.findElement(By.linkText("20")).click();
+		    if (cell.getText().equals(targetdate)){
+		      cell.findElement(By.linkText(targetdate)).click();
+		      logger.info("DCB date: " +targetdate + " " +target_month_year + " is selected successfully");
 		       break;
 		  }
-	 }
-		 }*/
-		 
+		}
+	}	  		 
     
 	@Test
 	public void DCB() throws InterruptedException 
@@ -107,9 +99,7 @@ public class TC_DCBTest_002 extends BaseClass{
     	dcbtitlevalidation();
     	dcbdate();
     	dcbselect();
-    	System.out.println("dcbselect");
-    	//dateselect();
-		System.out.println("end");
+    	dateselect();
 	}
 	
 }
