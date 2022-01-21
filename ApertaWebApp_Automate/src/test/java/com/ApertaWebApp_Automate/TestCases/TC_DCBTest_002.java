@@ -69,8 +69,7 @@ public class TC_DCBTest_002 extends BaseClass{
 		    	System.out.println("Month and year found");
 		    	
 		    	DCBPage.selectdate.click();
-		    	System.out.println("Month----year-----date found");
-		    	break;
+		    	//break;
 		    	
 			} 
 		    
@@ -80,13 +79,12 @@ public class TC_DCBTest_002 extends BaseClass{
 	    	System.out.println("date not found----checking for other date");
 	    	
 		    }
-    	}
-    	
-    }
+		    	}
+		    }
 	    	
 	    	
-	 public static void dateselect() {
-		 //PageFactory.initElements(driver,DCBPage.class);
+	/* public static void dateselect() {
+		 PageFactory.initElements(driver,DCBPage.class);
 		 //WebElement dateWidget = driver.findElement(your locator);
 		 //List<WebElement> columns=DCBPage.dateWidget.findElements(By.tagName("td"));
 		 System.out.println("insdie date select");
@@ -98,7 +96,7 @@ public class TC_DCBTest_002 extends BaseClass{
 		       break;
 		  }
 	 }
-		 }
+		 }*/
 		 
     
 	@Test
@@ -110,7 +108,7 @@ public class TC_DCBTest_002 extends BaseClass{
     	dcbdate();
     	dcbselect();
     	System.out.println("dcbselect");
-    	dateselect();
+    	//dateselect();
 		System.out.println("end");
 	}
 	
