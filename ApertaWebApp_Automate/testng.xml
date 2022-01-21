@@ -4,13 +4,22 @@
   <test name="Test-launchpad">
     <classes>
       <class name="com.ApertaWebApp_Automate.TestCases.TC_LoginTest_001"/>
-      <!--<class name="com.ApertaWebApp_Automate.TestCases.TC_DCBTest_002"/>-->
     </classes>
   </test>
    
   <test name="Test-DCB">
     <classes>
       <class name="com.ApertaWebApp_Automate.TestCases.TC_DCBTest_002"/>
+    </classes>
+    </test>
+    <test name="Test-DataEntry">
+    <classes>
+      <class name="com.ApertaWebApp_Automate.TestCases.TC_DataEntryTest_003"/>
+    </classes>
+  </test>
+  <test name="Test-WebBalancer">
+    <classes>
+      <class name="com.ApertaWebApp_Automate.TestCases.TC_WebBalancerTest_004"/>
     </classes>
   </test>
 </suite> 

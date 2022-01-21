@@ -30,7 +30,7 @@ public class BaseClass{
 	public static String detitle=readconfig.getdetitle(); 
 	public String aptitle=readconfig.getaptitle();
 	public static String dcbtitle=readconfig.getdcbtitle();
-	public String baltitle=readconfig.getbaltitle();
+	public static String baltitle=readconfig.getbaltitle();
 	public String suptitle=readconfig.getsuptitle();
 	public static WebDriver driver;
 	public static Logger logger;
