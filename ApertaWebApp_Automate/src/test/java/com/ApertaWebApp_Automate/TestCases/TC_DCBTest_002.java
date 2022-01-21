@@ -1,7 +1,9 @@
 package com.ApertaWebApp_Automate.TestCases;
 
 
+import java.security.PublicKey;
 import java.util.ArrayList;
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
@@ -12,6 +14,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.ApertaWebApp_Automate.PageObjects.DCBPage;
+import com.sun.tools.xjc.reader.xmlschema.bindinfo.BIConversion.Static;
 
 public class TC_DCBTest_002 extends BaseClass{
 	
@@ -66,7 +69,6 @@ public class TC_DCBTest_002 extends BaseClass{
 		    	System.out.println("Month and year found");
 		    	
 		    	DCBPage.selectdate.click();
-		    	//List<WebElement> dateli=driver.findElements(By.xpath("//*[@id=\"ui-datepicker-div\"]//tr//td"));
 		    	System.out.println("Month----year-----date found");
 		    	break;
 		    	
@@ -78,11 +80,26 @@ public class TC_DCBTest_002 extends BaseClass{
 	    	System.out.println("date not found----checking for other date");
 	    	
 		    }
-	    	
-
-		}
+    	}
     	
     }
+	    	
+	    	
+	 public static void dateselect() {
+		 //PageFactory.initElements(driver,DCBPage.class);
+		 //WebElement dateWidget = driver.findElement(your locator);
+		 //List<WebElement> columns=DCBPage.dateWidget.findElements(By.tagName("td"));
+		 System.out.println("insdie date select");
+
+		 for (WebElement cell: DCBPage.columns){
+		    //Select 13th Date 
+		    if (cell.getText().equals("20")){
+		       cell.findElement(By.linkText("20")).click();
+		       break;
+		  }
+	 }
+		 }
+		 
     
 	@Test
 	public void DCB() throws InterruptedException 
@@ -92,7 +109,9 @@ public class TC_DCBTest_002 extends BaseClass{
     	dcbtitlevalidation();
     	dcbdate();
     	dcbselect();
-		
+    	System.out.println("dcbselect");
+    	dateselect();
+		System.out.println("end");
 	}
 	
 }

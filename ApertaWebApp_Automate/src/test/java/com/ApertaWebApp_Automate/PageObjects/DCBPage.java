@@ -1,6 +1,12 @@
 package com.ApertaWebApp_Automate.PageObjects;
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.By.ByTagName;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.internal.FindsByTagName;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.FindBys;
 
 import com.ApertaWebApp_Automate.TestCases.BaseClass;
 
@@ -25,4 +31,7 @@ public class DCBPage extends BaseClass {
 	public static WebElement selectdate;
 	@FindBy(xpath = "//*[@id=\"ui-datepicker-div\"]/div/a[2]/span")
 	public static WebElement skip_year_month;
+	@FindBy(xpath = "//*[@id=\"ui-datepicker-div\"]/table/tbody/tr/td")
+	public static List<WebElement> columns;
+	public static WebElement cell;
 }
