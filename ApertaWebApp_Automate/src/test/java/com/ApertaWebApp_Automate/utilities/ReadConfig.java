@@ -115,11 +115,12 @@ public String getsuptitle() {
 	
 }
 
+
+
 public String targetmonth() {
 	
 	String targetmonth=pro.getProperty("targetmonth");
 	return targetmonth;
-	
 }
 public String targetyear() {
 	
@@ -143,6 +144,11 @@ public String targetdate() {
 public String dcbamount() {
 	String dcbamount=pro.getProperty("dcbamount");
 	return dcbamount;
+}
+
+public String author() {
+	String author=pro.getProperty("author");
+	return author;
 }
 
 }

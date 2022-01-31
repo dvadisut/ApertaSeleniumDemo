@@ -13,6 +13,7 @@ import org.testng.annotations.Test;
 import com.ApertaWebApp_Automate.PageObjects.DCBPage;
 import com.ApertaWebApp_Automate.PageObjects.LoginPage;
 import com.ApertaWebApp_Automate.PageObjects.WebBalancerPage;
+import com.aventstack.extentreports.Status;
 
 public class TC_WebBalancerTest_004 extends BaseClass {
 	
@@ -96,10 +97,12 @@ public class TC_WebBalancerTest_004 extends BaseClass {
 		PageFactory.initElements(driver,WebBalancerPage.class);
 		WebBalancerPage.WBclose.click();
 		logger.info("The Batch is closed successfully");
+		testcase.log(Status.PASS, "pass");
 	}
 
-	@Test
-	public static void WBtest() {
+	@Test (priority = 4)
+	public void WBtest() {
+		//testcase=extent.createTest("Aperta WebBalancer Test");
 		PageFactory.initElements(driver,WebBalancerPage.class);
 		checker();
 		WBvalid();
