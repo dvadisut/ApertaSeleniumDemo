@@ -23,7 +23,7 @@ public class TC_DCBTest_002 extends BaseClass{
 	public void dcbopen() {
 		
 		PageFactory.initElements(driver,DCBPage.class);
-		testcase=extent.createTest("Aperta DCB TitleAccessable Test ").assignCategory("Aperta DCB Test");
+		testcase=extent.createTest("Aperta DCB TitleAccessable Test ").assignCategory("Aperta DCB Test").assignDevice("Chrome");
 		DCBPage.dcbtitle.click();
 		logger.info("---------------<DCB is opened successfully>-----------------");
 		testcase.log(Status.PASS, "---------------DCB is opened successfully-----------------");
@@ -32,7 +32,7 @@ public class TC_DCBTest_002 extends BaseClass{
 	
 	public void dcbtitlevalidation() {
 		PageFactory.initElements(driver,DCBPage.class);
-		testcase=extent.createTest("Aperta DCB TitleValidation Test ").assignCategory("Aperta DCB Test");
+		testcase=extent.createTest("Aperta DCB TitleValidation Test ").assignCategory("Aperta DCB Test").assignDevice("Chrome");
        logger.info("Validating the title of the DCB Web App.....");
 		
 		ArrayList<String> wid = new ArrayList<String>(driver.getWindowHandles());
@@ -42,12 +42,12 @@ public class TC_DCBTest_002 extends BaseClass{
 		{
 			Assert.assertTrue(true);
 			logger.info("ApertaDCB Tile is present--->LANDED ON RIGHT PAGE------>");
-			testcase.log(Status.PASS, "DCB Tile Is Validation-Success");
+			testcase.log(Status.INFO, "DCB Tile Is Validation-Success");
 			
 		} else {
 			Assert.assertFalse(false);
 			logger.error("ApertaDCB Tile is not present--->LANDED ON WRONG PAGE------>");
-			testcase.log(Status.PASS, "DCB Tile Is Validation-Failure");
+			testcase.log(Status.INFO, "DCB Tile Is Validation-Failure");
 
 		}
 		
@@ -56,7 +56,7 @@ public class TC_DCBTest_002 extends BaseClass{
 	 
 	public static void dcbdate() {
     	PageFactory.initElements(driver,DCBPage.class);
-    	testcase=extent.createTest("Aperta DCB CalendarAccessable Test ").assignCategory("Aperta DCB Test");
+    	testcase=extent.createTest("Aperta DCB CalendarAccessable Test ").assignCategory("Aperta DCB Test").assignDevice("Chrome");
     	DCBPage.dcbcalselect.click();
 		logger.info("DCB calender is clicked successfully");
 		testcase.log(Status.PASS, "DCB calender is clicked successfully");
@@ -66,7 +66,7 @@ public class TC_DCBTest_002 extends BaseClass{
 	 
     public static void dcbselect() {
     	PageFactory.initElements(driver,DCBPage.class);
-    	testcase=extent.createTest("Aperta DCB Calendar Test ").assignCategory("Aperta DCB Test");
+    	testcase=extent.createTest("Aperta DCB Calendar Test ").assignCategory("Aperta DCB Test").assignDevice("Chrome");
     	while (true) {
     		selectedmonth=DCBPage.selectedmonth.getText();
 	    	selectedyear=DCBPage.selectedyear.getText();
@@ -101,7 +101,7 @@ public class TC_DCBTest_002 extends BaseClass{
 		    if (cell.getText().equals(targetdate)){
 		      cell.findElement(By.linkText(targetdate)).click();
 		      logger.info("DCB date: " +targetdate + " " +target_month_year + " is selected successfully");
-		      testcase=extent.createTest("Aperta DCB DateSelection Test ").assignCategory("Aperta DCB Test");
+		      testcase=extent.createTest("Aperta DCB DateSelection Test ").assignCategory("Aperta DCB Test").assignDevice("Chrome");
 		      testcase.log(Status.PASS, "DCB DateSelect done");
 		      break;
 		  }
@@ -113,7 +113,7 @@ public class TC_DCBTest_002 extends BaseClass{
 	{
 		
      	PageFactory.initElements(driver,DCBPage.class);
-     	testcase=extent.createTest("Aperta DCB Test").assignCategory("Aperta DCB Test");
+     	testcase=extent.createTest("Aperta DCB Test").assignCategory("Aperta DCB Test").assignDevice("Chrome");
      	dcbopen();
     	dcbtitlevalidation();
     	dcbdate();

@@ -120,6 +120,7 @@ public class BaseClass {
 			//testcase=extent.createTest("Aperta DataEntry Test");
 			
 			//testcase=extent.createTest("Aperta WebBalancer Test");
+			//ExtentTest testcase1;
 			
 		}
 		

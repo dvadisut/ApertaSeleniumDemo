@@ -1,14 +1,12 @@
 package com.ApertaWebApp_Automate.TestCases;
 
-import org.apache.log4j.jmx.LoggerDynamicMBean;
+
 import org.openqa.selenium.support.PageFactory;
-import org.testng.Assert;
-import org.testng.ITestResult;
 import org.testng.annotations.Test;
 import com.ApertaWebApp_Automate.PageObjects.LoginPage;
+import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
-import com.aventstack.extentreports.markuputils.ExtentColor;
-import com.aventstack.extentreports.markuputils.MarkupHelper;
+
 
 public class TC_LoginTest_001 extends BaseClass {
 
@@ -18,7 +16,7 @@ public class TC_LoginTest_001 extends BaseClass {
 		
 		try {
 			PageFactory.initElements(driver,LoginPage.class);
-			testcase=extent.createTest("Aperta password Test").assignCategory("Aperta Launchpad Test");
+			testcase=extent.createTest("Aperta password Test").assignCategory("Aperta Launchpad Test").assignDevice("Chrome");
 			LoginPage.password.sendKeys(readconfig.getWpassword());
 			LoginPage.loginbutton.click();
 				 logger.info("The Password is entered");
@@ -47,11 +45,11 @@ public class TC_LoginTest_001 extends BaseClass {
 	{
 		//Assert.assertTrue(true);
 		PageFactory.initElements(driver,LoginPage.class);
-		testcase=extent.createTest("Aperta title Test").assignCategory("Aperta Launchpad Test");
+		testcase=extent.createTest("Aperta title Test").assignCategory("Aperta Launchpad Test").assignDevice("Chrome");
 		logger.info("---------------<Launchpad is opened successfully>-----------------");
 		logger.info("Aperta Tile is present--->LANDED ON RIGHT PAGE------>");
 		logger.info("Login successfull");
-		testcase.log(Status.PASS, "Aperta Tile is present--->LANDED ON RIGHT PAGE------>");
+		testcase.log(Status.INFO, "Aperta Tile is present--->LANDED ON RIGHT PAGE------>");
 		
 		
 	} else {
@@ -64,7 +62,7 @@ public class TC_LoginTest_001 extends BaseClass {
 	private void Enterusername() {
 		
 		PageFactory.initElements(driver,LoginPage.class);
-		testcase=extent.createTest("Aperta username Test").assignCategory("Aperta Launchpad Test");
+		testcase=extent.createTest("Aperta username Test").assignCategory("Aperta Launchpad Test").assignDevice("Chrome");
 		LoginPage.setusername.sendKeys(readconfig.getusername());
 		logger.info("The Username is entered");
 		testcase.log(Status.PASS, "The Username is entered");
@@ -76,7 +74,7 @@ public class TC_LoginTest_001 extends BaseClass {
 	{
 		
 		PageFactory.initElements(driver,LoginPage.class);
-		testcase=extent.createTest("Aperta Login Test").assignCategory("Aperta Launchpad Test").assignDevice("Chrome");
+		ExtentTest testcase=extent.createTest("Aperta Login Test").assignCategory("Aperta Launchpad Test").assignDevice("Chrome");
         logger.info("The Aperta URL is opened");
         testcase.log(Status.PASS, "The Aperta URL is opened");
         Enterusername();
