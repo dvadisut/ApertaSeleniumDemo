@@ -7,28 +7,16 @@ import java.util.List;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
 import org.tinygroup.template.parser.grammer.TinyTemplateParser.If_directiveContext;
 
 import com.ApertaWebApp_Automate.TestCases.BaseClass;
 
 
 public class WebSupervisorPage extends BaseClass {
-	WebDriver driver=null;
-	
-	public WebSupervisorPage(WebDriver driver)
-	{
-	    this.driver=driver;
-		
-	}
 
-	public void opensup() {
-		
-		ArrayList<String> wid1 = new ArrayList<String>(driver.getWindowHandles());
-		driver.switchTo().window(wid1.get(0));
-		driver.findElement(By.xpath("//*[@id=\"dropDivApertaWS\"]")).click();
-		logger.info("---------------Web Supervisor is opened successfully-----------------");
-		
-	}
+
+	/*
 	
 	public void suplefttitle() {
 		ArrayList<String> wid1 = new ArrayList<String>(driver.getWindowHandles());
@@ -111,6 +99,12 @@ public class WebSupervisorPage extends BaseClass {
 		WebElement sdattention=driver.findElement(By.xpath("//*[@id=\"DashAttention\"]"));
 		
 		
-	}
+	}*/
+	
+	
+	@FindBy(xpath = "//*[@id=\"SBDashboard\"]/span")
+	public static WebElement SBDashboard;
+	@FindBy(xpath = "//*[@id=\"DashSession\"]")
+	public static WebElement DashSession;
 }
 
