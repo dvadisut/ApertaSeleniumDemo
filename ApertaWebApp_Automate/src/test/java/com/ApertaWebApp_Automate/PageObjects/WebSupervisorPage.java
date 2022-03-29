@@ -7,7 +7,9 @@ import java.util.List;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindAll;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.FindBys;
 import org.tinygroup.template.parser.grammer.TinyTemplateParser.If_directiveContext;
 
 import com.ApertaWebApp_Automate.TestCases.BaseClass;
@@ -106,5 +108,9 @@ public class WebSupervisorPage extends BaseClass {
 	public static WebElement SBDashboard;
 	@FindBy(xpath = "//*[@id=\"DashSession\"]")
 	public static WebElement DashSession;
+	@FindBy(xpath = "//*[@id=\"DashDate\"]")
+	public static WebElement DashDate;
+	public static List<WebElement> supervisorTiles = driver.findElements(By.xpath("//*"));
+	public static WebElement element;
 }
 

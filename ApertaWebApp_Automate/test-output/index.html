@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -93,7 +93,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods,   4 passed</span>
+                    <span class="method-stats">5 methods, 1 failed,   4 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.ApertaWebApp_Automate.TestCases.TC_SupervisorTest_005" class="method navigator-link" hash-for-method="superTest">superTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -134,6 +148,42 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.ApertaWebApp_Automate.TestCases.TC_SupervisorTest_005</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="superTest">
+                  </a> <!-- superTest -->
+                  <span class="method-name">superTest</span>
+                  <div class="stack-trace">org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=99.0.4844.84)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;INLTWS000025&apos;, ip: &apos;192.168.1.101&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.13&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 99.0.4844.84, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\DHINAK~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:60357}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 76bb4bb09b5583ae67ac407a5f8d400d
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.isDisplayed(RemoteWebElement.java:326)
+	at com.ApertaWebApp_Automate.TestCases.TC_SupervisorTest_005.SuperTileValidation(TC_SupervisorTest_005.java:64)
+	at com.ApertaWebApp_Automate.TestCases.TC_SupervisorTest_005.superTest(TC_SupervisorTest_005.java:83)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -210,6 +260,7 @@
       &lt;class name=&quot;com.ApertaWebApp_Automate.TestCases.TC_DCBTest_002&quot;/&gt;
       &lt;class name=&quot;com.ApertaWebApp_Automate.TestCases.TC_DataEntryTest_003&quot;/&gt;
       &lt;class name=&quot;com.ApertaWebApp_Automate.TestCases.TC_WebBalancerTest_004&quot;/&gt;
+      &lt;class name=&quot;com.ApertaWebApp_Automate.TestCases.TC_SupervisorTest_005&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Aperta Web Application Testing --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -223,7 +274,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Aperta Web Application Testing (4 classes)</span>
+                <span class="test-name">Aperta Web Application Testing (5 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -249,28 +300,32 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(4);
+data.addRows(5);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'WBtest')
 data.setCell(0, 2, 'com.ApertaWebApp_Automate.TestCases.TC_WebBalancerTest_004')
-data.setCell(0, 3, 18810);
+data.setCell(0, 3, 6164);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'DCBdataentry')
-data.setCell(1, 2, 'com.ApertaWebApp_Automate.TestCases.TC_DataEntryTest_003')
-data.setCell(1, 3, 7451);
+data.setCell(1, 1, 'DCB')
+data.setCell(1, 2, 'com.ApertaWebApp_Automate.TestCases.TC_DCBTest_002')
+data.setCell(1, 3, 4813);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'DCB')
-data.setCell(2, 2, 'com.ApertaWebApp_Automate.TestCases.TC_DCBTest_002')
-data.setCell(2, 3, 5334);
+data.setCell(2, 1, 'DCBdataentry')
+data.setCell(2, 2, 'com.ApertaWebApp_Automate.TestCases.TC_DataEntryTest_003')
+data.setCell(2, 3, 4713);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'LoginTest')
-data.setCell(3, 2, 'com.ApertaWebApp_Automate.TestCases.TC_LoginTest_001')
-data.setCell(3, 3, 3769);
+data.setCell(3, 1, 'superTest')
+data.setCell(3, 2, 'com.ApertaWebApp_Automate.TestCases.TC_SupervisorTest_005')
+data.setCell(3, 3, 3931);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'LoginTest')
+data.setCell(4, 2, 'com.ApertaWebApp_Automate.TestCases.TC_LoginTest_001')
+data.setCell(4, 3, 1375);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 35 seconds</span>
+              <span class="suite-total-time">Total running time: 20 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -285,14 +340,12 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">6 ignored methods</span>
+            <span class="header-content">4 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
               <span class="ignored-class-name">com.ApertaWebApp_Automate.TestCases.TC_WebBalancerTest_004</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">close</span>
-                <br/>
                 <span class="ignored-method-name">setup</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
@@ -300,8 +353,13 @@ return data;
             <div class="ignored-class-div">
               <span class="ignored-class-name">com.ApertaWebApp_Automate.TestCases.TC_DataEntryTest_003</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">close</span>
+                <span class="ignored-method-name">setup</span>
                 <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.ApertaWebApp_Automate.TestCases.TC_SupervisorTest_005</span>
+              <div class="ignored-methods-div">
                 <span class="ignored-method-name">setup</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
@@ -309,8 +367,6 @@ return data;
             <div class="ignored-class-div">
               <span class="ignored-class-name">com.ApertaWebApp_Automate.TestCases.TC_DCBTest_002</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">close</span>
-                <br/>
                 <span class="ignored-method-name">setup</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
@@ -330,36 +386,38 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="test-method">
                 <span class="method-name">LoginTest</span>
-                <span class="method-start">21942 ms</span>
+                <span class="method-start">12836 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.ApertaWebApp_Automate.TestCases.TC_DCBTest_002</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">DCB</span>
-                <span class="method-start">25724 ms</span>
+                <span class="method-start">14226 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.ApertaWebApp_Automate.TestCases.TC_DataEntryTest_003</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">DCBdataentry</span>
-                <span class="method-start">31061 ms</span>
+                <span class="method-start">19042 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.ApertaWebApp_Automate.TestCases.TC_WebBalancerTest_004</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">WBtest</span>
-                <span class="method-start">38515 ms</span>
+                <span class="method-start">23757 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">com.ApertaWebApp_Automate.TestCases.TC_LoginTest_001</div> <!-- chronological-class-name -->
-              <div class="configuration-suite after">
-                <span class="method-name">close</span>
-                <span class="method-start">57474 ms</span>
-              </div> <!-- configuration-suite after -->
+              <div class="chronological-class-name">com.ApertaWebApp_Automate.TestCases.TC_SupervisorTest_005</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">superTest</span>
+                <span class="method-start">29922 ms</span>
+              </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

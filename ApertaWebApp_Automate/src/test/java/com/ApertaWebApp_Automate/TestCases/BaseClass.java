@@ -124,12 +124,12 @@ public class BaseClass {
 			
 		}
 		
-	@AfterSuite
+	/*@AfterSuite
 	public void close()
 	{
 		driver.quit();
 		extent.flush();
 		
-	}
+	}*/
 }
 

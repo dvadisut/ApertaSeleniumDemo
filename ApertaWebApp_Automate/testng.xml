@@ -32,6 +32,7 @@
       <class name="com.ApertaWebApp_Automate.TestCases.TC_DCBTest_002"/>
       <class name="com.ApertaWebApp_Automate.TestCases.TC_DataEntryTest_003"/>
       <class name="com.ApertaWebApp_Automate.TestCases.TC_WebBalancerTest_004"/>
+      <class name="com.ApertaWebApp_Automate.TestCases.TC_SupervisorTest_005"/>
     </classes>
   </test>
 </suite> 
