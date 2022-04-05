@@ -76,22 +76,11 @@ public class BaseClass {
 		logger = Logger.getLogger("BaseClass.class");
 		PropertyConfigurator.configure("Log4j.properties");
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		// sparkreporter = new ExtentSparkReporter("Report.html");
-		//extent.attachReporter(sparkreporter);
-		//sparkreporter.config().setReportName("Aperta Web Application Testing");
-		//sparkreporter.config().setTheme(Theme.DARK);
-		//Reporting1.exreport();
 		
-		/*ExtentSparkReporter sparkreporter = new ExtentSparkReporter("Report.html");
-		extent.attachReporter(sparkreporter);
-		extent.setSystemInfo("Windows Server", "2019");
-		extent.setSystemInfo("Web Browser", "Chrome");
-		sparkreporter.config().setReportName("Aperta Web Application Testing");
-		sparkreporter.config().setTheme(Theme.DARK);*/
 		
 		
 			String timeStamp = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date());//time stamp
-			String repName="Test-Report-"+timeStamp+".html";
+			String repName="Test-Report.html";
 			
 			Reporter=new ExtentSparkReporter(System.getProperty("user.dir")+ "/Aperta-Reports/"+repName).viewConfigurer().viewOrder().as(new ViewName[] {ViewName.CATEGORY,ViewName.DASHBOARD,ViewName.TEST}).apply();//specify location of the report
 			try {
