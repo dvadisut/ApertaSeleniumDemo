@@ -62,7 +62,6 @@ public class TC_SupervisorTest_005 extends BaseClass {
 		for (int i = 0; i < 3; i++) {
 			
 			if (WebSupervisorPage.supervisorTiles.get(i).isDisplayed()) {
-				System.out.println("inside if loop valid");
 				Assert.assertTrue(true);
 				logger.info("The "+WebSupervisorPage.supervisorTiles.get(i).getText()+" is displayed successfully");
 				testcase.log(Status.PASS, "The "+WebSupervisorPage.supervisorTiles.get(i).getText()+" Title Displayed-Success");
