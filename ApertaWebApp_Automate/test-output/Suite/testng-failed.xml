@@ -5,32 +5,16 @@
     <classes>
       <class name="com.ApertaWebApp_Automate.TestCases.TC_WebBalancerTest_004">
         <methods>
-          <include name="close"/>
           <include name="setup"/>
           <include name="WBtest"/>
         </methods>
       </class> <!-- com.ApertaWebApp_Automate.TestCases.TC_WebBalancerTest_004 -->
-      <class name="com.ApertaWebApp_Automate.TestCases.TC_LoginTest_001">
+      <class name="com.ApertaWebApp_Automate.TestCases.TC_SupervisorTest_005">
         <methods>
-          <include name="close"/>
-          <include name="setup"/>
-          <include name="LoginTest"/>
-        </methods>
-      </class> <!-- com.ApertaWebApp_Automate.TestCases.TC_LoginTest_001 -->
-      <class name="com.ApertaWebApp_Automate.TestCases.TC_DataEntryTest_003">
-        <methods>
-          <include name="close"/>
-          <include name="DCBdataentry"/>
+          <include name="superTest"/>
           <include name="setup"/>
         </methods>
-      </class> <!-- com.ApertaWebApp_Automate.TestCases.TC_DataEntryTest_003 -->
-      <class name="com.ApertaWebApp_Automate.TestCases.TC_DCBTest_002">
-        <methods>
-          <include name="close"/>
-          <include name="setup"/>
-          <include name="DCB"/>
-        </methods>
-      </class> <!-- com.ApertaWebApp_Automate.TestCases.TC_DCBTest_002 -->
+      </class> <!-- com.ApertaWebApp_Automate.TestCases.TC_SupervisorTest_005 -->
     </classes>
   </test> <!-- Aperta Web Application Testing(failed) -->
 </suite> <!-- Failed suite [Suite] -->

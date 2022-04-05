@@ -45,6 +45,13 @@ public class TC_WebBalancerTest_004 extends BaseClass {
 
 		}
 	}
+	
+	public static void DCBClose() {
+		ArrayList<String> wid = new ArrayList<String>(driver.getWindowHandles());
+		driver.switchTo().window(wid.get(1));
+		driver.close();
+		
+	}
 	public static void Webbalapprove() {
 		PageFactory.initElements(driver,WebBalancerPage.class);
 		testcase=extent.createTest("DCB-WebBalancer approve Test").assignCategory("Aperta WebBalancer Test").assignDevice("Chrome");
@@ -115,6 +122,7 @@ public class TC_WebBalancerTest_004 extends BaseClass {
 		WBvalid();
 		Webbalapprove();
 		WBclose();
+		DCBClose();
 		
 		
 	}

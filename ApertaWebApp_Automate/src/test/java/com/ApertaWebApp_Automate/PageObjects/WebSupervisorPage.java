@@ -104,13 +104,21 @@ public class WebSupervisorPage extends BaseClass {
 	}*/
 	
 	
-	@FindBy(xpath = "//*[@id=\"SBDashboard\"]/span")
+	/*@FindBy(xpath = "//*[@id=\"SBDashboard\"]/span")
 	public static WebElement SBDashboard;
 	@FindBy(xpath = "//*[@id=\"DashSession\"]")
 	public static WebElement DashSession;
 	@FindBy(xpath = "//*[@id=\"DashDate\"]")
 	public static WebElement DashDate;
-	public static List<WebElement> supervisorTiles = driver.findElements(By.xpath("//*"));
-	public static WebElement element;
+	//@FindBy(css = "*")
+	//public List<WebElement> supervisorTiles;
+	public List<WebElement> supervisorTiles = driver.findElements(By.cssSelector("*"));
+	//public static WebElement element;*/
+	@FindAll( {
+		@FindBy(xpath = "//*[@id=\"SBDashboard\"]/span"),
+		@FindBy(xpath = "//*[@id=\"DashSession\"]"),
+		@FindBy(xpath = "//*[@id=\"DashDate\"]")
+	} )
+	public static List<WebElement> supervisorTiles;
 }
 

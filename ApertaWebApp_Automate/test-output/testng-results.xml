@@ -1,106 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="4" total="9" passed="4" failed="1" skipped="0">
+<testng-results ignored="8" total="13" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-03-29T20:58:03 IST" name="Suite" finished-at="2022-03-29T20:58:24 IST" duration-ms="21066">
+  <suite started-at="2022-04-05T15:59:28 IST" name="Suite" finished-at="2022-04-05T15:59:53 IST" duration-ms="25188">
     <groups>
     </groups>
-    <test started-at="2022-03-29T20:58:03 IST" name="Aperta Web Application Testing" finished-at="2022-03-29T20:58:24 IST" duration-ms="21066">
+    <test started-at="2022-04-05T15:59:28 IST" name="Aperta Web Application Testing" finished-at="2022-04-05T15:59:53 IST" duration-ms="25188">
+      <class name="com.ApertaWebApp_Automate.TestCases.TC_LoginTest_001">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.ApertaWebApp_Automate.TestCases.TC_LoginTest_001@2e6a8155]" started-at="2022-04-05T15:59:12 IST" name="setup" finished-at="2022-04-05T15:59:28 IST" duration-ms="16079" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="LoginTest()[pri:1, instance:com.ApertaWebApp_Automate.TestCases.TC_LoginTest_001@2e6a8155]" started-at="2022-04-05T15:59:28 IST" name="LoginTest" finished-at="2022-04-05T15:59:31 IST" duration-ms="2448" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginTest -->
+        <test-method is-config="true" signature="close()[pri:0, instance:com.ApertaWebApp_Automate.TestCases.TC_LoginTest_001@2e6a8155]" started-at="2022-04-05T15:59:53 IST" name="close" finished-at="2022-04-05T15:59:55 IST" duration-ms="1816" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- com.ApertaWebApp_Automate.TestCases.TC_LoginTest_001 -->
       <class name="com.ApertaWebApp_Automate.TestCases.TC_DCBTest_002">
-        <test-method signature="DCB()[pri:2, instance:com.ApertaWebApp_Automate.TestCases.TC_DCBTest_002@25641d39]" started-at="2022-03-29T20:58:05 IST" name="DCB" finished-at="2022-03-29T20:58:10 IST" duration-ms="4813" status="PASS">
+        <test-method signature="DCB()[pri:2, instance:com.ApertaWebApp_Automate.TestCases.TC_DCBTest_002@537f60bf]" started-at="2022-04-05T15:59:31 IST" name="DCB" finished-at="2022-04-05T15:59:36 IST" duration-ms="5154" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DCB -->
       </class> <!-- com.ApertaWebApp_Automate.TestCases.TC_DCBTest_002 -->
-      <class name="com.ApertaWebApp_Automate.TestCases.TC_LoginTest_001">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.ApertaWebApp_Automate.TestCases.TC_LoginTest_001@a38c7fe]" started-at="2022-03-29T20:57:51 IST" name="setup" finished-at="2022-03-29T20:58:03 IST" duration-ms="12791" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="LoginTest()[pri:1, instance:com.ApertaWebApp_Automate.TestCases.TC_LoginTest_001@a38c7fe]" started-at="2022-03-29T20:58:03 IST" name="LoginTest" finished-at="2022-03-29T20:58:05 IST" duration-ms="1375" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- LoginTest -->
-      </class> <!-- com.ApertaWebApp_Automate.TestCases.TC_LoginTest_001 -->
       <class name="com.ApertaWebApp_Automate.TestCases.TC_DataEntryTest_003">
-        <test-method signature="DCBdataentry()[pri:3, instance:com.ApertaWebApp_Automate.TestCases.TC_DataEntryTest_003@7b36aa0c]" started-at="2022-03-29T20:58:10 IST" name="DCBdataentry" finished-at="2022-03-29T20:58:14 IST" duration-ms="4713" status="PASS">
+        <test-method signature="DCBdataentry()[pri:3, instance:com.ApertaWebApp_Automate.TestCases.TC_DataEntryTest_003@5677323c]" started-at="2022-04-05T15:59:36 IST" name="DCBdataentry" finished-at="2022-04-05T15:59:43 IST" duration-ms="6904" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DCBdataentry -->
       </class> <!-- com.ApertaWebApp_Automate.TestCases.TC_DataEntryTest_003 -->
       <class name="com.ApertaWebApp_Automate.TestCases.TC_WebBalancerTest_004">
-        <test-method signature="WBtest()[pri:4, instance:com.ApertaWebApp_Automate.TestCases.TC_WebBalancerTest_004@5824a83d]" started-at="2022-03-29T20:58:14 IST" name="WBtest" finished-at="2022-03-29T20:58:20 IST" duration-ms="6164" status="PASS">
+        <test-method signature="WBtest()[pri:4, instance:com.ApertaWebApp_Automate.TestCases.TC_WebBalancerTest_004@18df8434]" started-at="2022-04-05T15:59:43 IST" name="WBtest" finished-at="2022-04-05T15:59:50 IST" duration-ms="7029" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- WBtest -->
       </class> <!-- com.ApertaWebApp_Automate.TestCases.TC_WebBalancerTest_004 -->
       <class name="com.ApertaWebApp_Automate.TestCases.TC_SupervisorTest_005">
-        <test-method signature="superTest()[pri:5, instance:com.ApertaWebApp_Automate.TestCases.TC_SupervisorTest_005@537f60bf]" started-at="2022-03-29T20:58:20 IST" name="superTest" finished-at="2022-03-29T20:58:24 IST" duration-ms="3931" status="FAIL">
-          <exception class="org.openqa.selenium.StaleElementReferenceException">
-            <message>
-              <![CDATA[stale element reference: element is not attached to the page document
-  (Session info: chrome=99.0.4844.84)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'INLTWS000025', ip: '192.168.1.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.13'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 99.0.4844.84, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\DHINAK~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:60357}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 76bb4bb09b5583ae67ac407a5f8d400d]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
-  (Session info: chrome=99.0.4844.84)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'INLTWS000025', ip: '192.168.1.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.13'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 99.0.4844.84, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\DHINAK~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:60357}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 76bb4bb09b5583ae67ac407a5f8d400d
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-at org.openqa.selenium.remote.RemoteWebElement.isDisplayed(RemoteWebElement.java:326)
-at com.ApertaWebApp_Automate.TestCases.TC_SupervisorTest_005.SuperTileValidation(TC_SupervisorTest_005.java:64)
-at com.ApertaWebApp_Automate.TestCases.TC_SupervisorTest_005.superTest(TC_SupervisorTest_005.java:83)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
+        <test-method signature="superTest()[pri:5, instance:com.ApertaWebApp_Automate.TestCases.TC_SupervisorTest_005@65c7a252]" started-at="2022-04-05T15:59:50 IST" name="superTest" finished-at="2022-04-05T15:59:53 IST" duration-ms="3572" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- superTest -->
