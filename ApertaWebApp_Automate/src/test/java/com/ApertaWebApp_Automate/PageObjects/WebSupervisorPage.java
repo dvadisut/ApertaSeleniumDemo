@@ -18,45 +18,15 @@ import com.ApertaWebApp_Automate.TestCases.BaseClass;
 public class WebSupervisorPage extends BaseClass {
 
 
-	/*
+	@FindAll( {
+		@FindBy(xpath = "//*[@id=\"SBDashboard\"]/span"),
+		@FindBy(xpath = "//*[@id=\"DashSession\"]"),
+		@FindBy(xpath = "//*[@id=\"DashDate\"]")
+	} )
+	public static List<WebElement> supervisorTiles;
 	
-	public void suplefttitle() {
-		ArrayList<String> wid1 = new ArrayList<String>(driver.getWindowHandles());
-		driver.switchTo().window(wid1.get(1));
-		    WebElement sdate=driver.findElement(By.xpath("//*[@id=\"SBDate\"]/span"));	
-		    boolean sd= sdate.isDisplayed();
-		    String s1=String.valueOf(sd);
-			WebElement stime=driver.findElement(By.xpath("//*[@id=\"SideBarList\"]/li[2]/span")); 
-			 boolean st= stime.isDisplayed();
-			    String s2=String.valueOf(st);
-			WebElement ssession=driver.findElement(By.xpath("//*[@id=\"SBSession\"]/span"));
-			WebElement sicl=driver.findElement(By.xpath("//*[@id=\"SBFiles\"]/span")); 
-			WebElement stot=driver.findElement(By.xpath("//*[@id=\"SBTotals\"]/span"));
-			WebElement ssite=driver.findElement(By.xpath("//*[@id=\"SBSites\"]/span")); 
-			WebElement sreturn=driver.findElement(By.xpath("//*[@id=\"SBReturns\"]/span")); 
-			WebElement sreport=driver.findElement(By.xpath("//*[@id=\"SBReports\"]/span")); 
-			WebElement statics=driver.findElement(By.xpath("//*[@id=\"SBStats\"]/span")); 
-			WebElement stasks=driver.findElement(By.xpath("//*[@id=\"SBTasks\"]/span")); 
-			WebElement steam=driver.findElement(By.xpath("//*[@id=\"SBTeam\"]/span")); 
-			WebElement sattention=driver.findElement(By.xpath("//*[@id=\"SBAttention\"]/span")); 
-			WebElement salerts=driver.findElement(By.xpath("//*[@id=\"SBAlerts\"]/span")); 
-			WebElement sdoc=driver.findElement(By.xpath("//*[@id=\"SBDocs\"]/span")); 
-			WebElement smore=driver.findElement(By.xpath("//*[@id=\"SideBarList\"]/li[21]/span")); 
-			WebElement sfilter=driver.findElement(By.xpath("//*[@id=\"SideBarList\"]/li[22]")); 
-			WebElement sicls=driver.findElement(By.xpath("//*[@id=\"SideBarList\"]/li[23]/span")); 
-			WebElement sallsite=driver.findElement(By.xpath("//*[@id=\"SideBarList\"]/li[24]/span")); 
-			WebElement scurren=driver.findElement(By.xpath("//*[@id=\"SideBarList\"]/li[25]/span")); 
-			WebElement susername=driver.findElement(By.xpath("//*[@id=\"SideBarList\"]/li[28]/span"));
-			
-	String[] ele= {s1,s2};
-	
-	for (int i = 0; i < ele.length; i++) {
-		
-	}
-	
-	
-	
-	}
+}
+
 			
 			
 		
@@ -66,8 +36,8 @@ public class WebSupervisorPage extends BaseClass {
 		
 		
 	
-	
-	public void supdashtiles() {
+
+	/*public void supdashtiles() {
 		
 		WebElement sdash=driver.findElement(By.xpath("//*[@id=\"SBDashboard\"]/span")); 
 		WebElement sdsession=driver.findElement(By.xpath("//*[@id=\"DashSession\"]"));
@@ -102,23 +72,8 @@ public class WebSupervisorPage extends BaseClass {
 		
 		
 	}*/
-	
-	
-	/*@FindBy(xpath = "//*[@id=\"SBDashboard\"]/span")
-	public static WebElement SBDashboard;
-	@FindBy(xpath = "//*[@id=\"DashSession\"]")
-	public static WebElement DashSession;
-	@FindBy(xpath = "//*[@id=\"DashDate\"]")
-	public static WebElement DashDate;
-	//@FindBy(css = "*")
-	//public List<WebElement> supervisorTiles;
-	public List<WebElement> supervisorTiles = driver.findElements(By.cssSelector("*"));
-	//public static WebElement element;*/
-	@FindAll( {
-		@FindBy(xpath = "//*[@id=\"SBDashboard\"]/span"),
-		@FindBy(xpath = "//*[@id=\"DashSession\"]"),
-		@FindBy(xpath = "//*[@id=\"DashDate\"]")
-	} )
-	public static List<WebElement> supervisorTiles;
-}
+
+
+
+
 
