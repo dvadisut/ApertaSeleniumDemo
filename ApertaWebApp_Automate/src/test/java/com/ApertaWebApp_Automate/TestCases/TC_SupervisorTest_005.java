@@ -40,7 +40,6 @@ public class TC_SupervisorTest_005 extends BaseClass {
 		ArrayList<String> wid1 = new ArrayList<String>(driver.getWindowHandles());
 		driver.switchTo().window(wid1.get(1));
 		String suptil =driver.getTitle();
-		System.out.println("the tile " +suptil);
 		if (suptil.equals(suptitle)) 
 		{
 			
