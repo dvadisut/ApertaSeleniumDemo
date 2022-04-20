@@ -52,12 +52,6 @@ public class BaseClass {
 	public static String target_month_year = readconfig.targetmonth() + " " + readconfig.targetyear();
 	public static String dcbamount=readconfig.dcbamount();
 	
-	//ExtentReports extent = new ExtentReports();
-	
-	
-	//extent = new ExtentReports();
-	//static ExtentTest testcase;
-	//ExtentReports extent = new ExtentReports();
 	public ExtentSparkReporter Reporter;
 	public static ExtentReports extent;
 	public static ExtentTest testcase;
