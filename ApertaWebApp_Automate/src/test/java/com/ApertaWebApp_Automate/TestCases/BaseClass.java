@@ -96,14 +96,7 @@ public class BaseClass {
 			Reporter.config().setReportName("Aperta Web Application Testing"); // name of the report
 			//Reporter.config().setTestViewChartLocation(ChartLocation.TOP); //location of the chart
 			Reporter.config().setTheme(Theme.DARK);
-			//testcase=extent.createTest("Aperta Login Test").assignCategory("Launchpad");
 			
-			//testcase=extent.createTest("Aperta DCB Test").assignCategory("DCB");
-			
-			//testcase=extent.createTest("Aperta DataEntry Test");
-			
-			//testcase=extent.createTest("Aperta WebBalancer Test");
-			//ExtentTest testcase1;
 			
 		}
 		
