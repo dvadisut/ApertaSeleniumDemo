@@ -32,7 +32,7 @@ import com.aventstack.extentreports.reporter.configuration.ViewName;
 
 public class BaseClass {
 
-	static ReadConfig readconfig=new ReadConfig(); 
+	protected static ReadConfig readconfig=new ReadConfig(); 
 	public String baseURL=readconfig.getApplicationURL();
 	public String username=readconfig.getusername();
 	public String password=readconfig.getpassword();

@@ -1,20 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Aperta Web Application Testing(failed)">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.ApertaWebApp_Automate.TestCases.TC_WebBalancerTest_004">
+      <class name="TestNGdriverProvider.failedtestexecution">
         <methods>
-          <include name="setup"/>
-          <include name="WBtest"/>
+          <include name="method1"/>
         </methods>
-      </class> <!-- com.ApertaWebApp_Automate.TestCases.TC_WebBalancerTest_004 -->
-      <class name="com.ApertaWebApp_Automate.TestCases.TC_SupervisorTest_005">
-        <methods>
-          <include name="superTest"/>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- com.ApertaWebApp_Automate.TestCases.TC_SupervisorTest_005 -->
+      </class> <!-- TestNGdriverProvider.failedtestexecution -->
     </classes>
-  </test> <!-- Aperta Web Application Testing(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

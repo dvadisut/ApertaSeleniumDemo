@@ -1,49 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="8" total="13" passed="5" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-04-05T17:04:42 IST" name="Suite" finished-at="2022-04-05T17:05:08 IST" duration-ms="25738">
+  <suite started-at="2022-08-10T07:38:16 IST" name="Default suite" finished-at="2022-08-10T07:38:27 IST" duration-ms="11526">
     <groups>
     </groups>
-    <test started-at="2022-04-05T17:04:42 IST" name="Aperta Web Application Testing" finished-at="2022-04-05T17:05:08 IST" duration-ms="25738">
-      <class name="com.ApertaWebApp_Automate.TestCases.TC_DCBTest_002">
-        <test-method signature="DCB()[pri:2, instance:com.ApertaWebApp_Automate.TestCases.TC_DCBTest_002@537f60bf]" started-at="2022-04-05T17:04:48 IST" name="DCB" finished-at="2022-04-05T17:04:53 IST" duration-ms="4795" status="PASS">
+    <test started-at="2022-08-10T07:38:16 IST" name="Default test" finished-at="2022-08-10T07:38:27 IST" duration-ms="11526">
+      <class name="BrokenlinkTest.broklinkTest">
+        <test-method signature="methodbroketest()[pri:0, instance:BrokenlinkTest.broklinkTest@6bd61f98]" started-at="2022-08-10T07:38:16 IST" name="methodbroketest" finished-at="2022-08-10T07:38:27 IST" duration-ms="11454" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- DCB -->
-      </class> <!-- com.ApertaWebApp_Automate.TestCases.TC_DCBTest_002 -->
-      <class name="com.ApertaWebApp_Automate.TestCases.TC_LoginTest_001">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.ApertaWebApp_Automate.TestCases.TC_LoginTest_001@2e6a8155]" started-at="2022-04-05T17:04:28 IST" name="setup" finished-at="2022-04-05T17:04:42 IST" duration-ms="13632" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="LoginTest()[pri:1, instance:com.ApertaWebApp_Automate.TestCases.TC_LoginTest_001@2e6a8155]" started-at="2022-04-05T17:04:42 IST" name="LoginTest" finished-at="2022-04-05T17:04:48 IST" duration-ms="5818" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- LoginTest -->
-        <test-method is-config="true" signature="close()[pri:0, instance:com.ApertaWebApp_Automate.TestCases.TC_LoginTest_001@2e6a8155]" started-at="2022-04-05T17:05:08 IST" name="close" finished-at="2022-04-05T17:05:10 IST" duration-ms="1821" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- close -->
-      </class> <!-- com.ApertaWebApp_Automate.TestCases.TC_LoginTest_001 -->
-      <class name="com.ApertaWebApp_Automate.TestCases.TC_DataEntryTest_003">
-        <test-method signature="DCBdataentry()[pri:3, instance:com.ApertaWebApp_Automate.TestCases.TC_DataEntryTest_003@5677323c]" started-at="2022-04-05T17:04:53 IST" name="DCBdataentry" finished-at="2022-04-05T17:04:58 IST" duration-ms="5110" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- DCBdataentry -->
-      </class> <!-- com.ApertaWebApp_Automate.TestCases.TC_DataEntryTest_003 -->
-      <class name="com.ApertaWebApp_Automate.TestCases.TC_WebBalancerTest_004">
-        <test-method signature="WBtest()[pri:4, instance:com.ApertaWebApp_Automate.TestCases.TC_WebBalancerTest_004@18df8434]" started-at="2022-04-05T17:04:58 IST" name="WBtest" finished-at="2022-04-05T17:05:04 IST" duration-ms="6681" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- WBtest -->
-      </class> <!-- com.ApertaWebApp_Automate.TestCases.TC_WebBalancerTest_004 -->
-      <class name="com.ApertaWebApp_Automate.TestCases.TC_SupervisorTest_005">
-        <test-method signature="superTest()[pri:5, instance:com.ApertaWebApp_Automate.TestCases.TC_SupervisorTest_005@65c7a252]" started-at="2022-04-05T17:05:04 IST" name="superTest" finished-at="2022-04-05T17:05:08 IST" duration-ms="3244" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- superTest -->
-      </class> <!-- com.ApertaWebApp_Automate.TestCases.TC_SupervisorTest_005 -->
-    </test> <!-- Aperta Web Application Testing -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- methodbroketest -->
+      </class> <!-- BrokenlinkTest.broklinkTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

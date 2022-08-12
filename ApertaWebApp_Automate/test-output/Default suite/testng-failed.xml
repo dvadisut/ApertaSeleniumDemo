@@ -3,12 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.ApertaWebApp_Automate.TestCases.TC_SupervisorTest_005">
+      <class name="TestNGdriverProvider.failedtestexecution">
         <methods>
-          <include name="superTest"/>
-          <include name="setup"/>
+          <include name="method1"/>
         </methods>
-      </class> <!-- com.ApertaWebApp_Automate.TestCases.TC_SupervisorTest_005 -->
+      </class> <!-- TestNGdriverProvider.failedtestexecution -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
